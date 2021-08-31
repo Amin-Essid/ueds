@@ -1,3 +1,5 @@
+// const path = require("path");
+
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
@@ -5,6 +7,15 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-sass",
+    // {
+    //   resolve: "gatsby-plugin-sass",
+    //   options: {
+    //     sassOptions: {
+    //       data: `@import "core.scss";`,
+    //       includePaths: [path.resolve(__dirname, "src/style")],
+    //     },
+    //   },
+    // },
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
@@ -33,6 +44,14 @@ module.exports = {
         path: "./src/pages/",
       },
       __key: "pages",
+    },
+    {
+      resolve: "gatsby-plugin-google-fonts",
+      options: {
+        fonts: [`Poppins`],
+        display: "swap",
+        // display: "block",
+      },
     },
   ],
 };

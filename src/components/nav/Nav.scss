@@ -1,0 +1,94 @@
+$main-color: #1cabe2;
+
+.headerLargeContainer {
+  background-color: $main-color;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1072px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.headerLogo {
+  height: 65px;
+  width: 65px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.headerTitle {
+  font-size: 22px;
+  font-weight: "regular";
+  max-width: 150px;
+  margin-left: 10px;
+}
+
+.headerNav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 636px;
+  color: white;
+}
+
+.headerMobileNavIcon {
+  display: none;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.closedHeaderMobileNav {
+  display: none;
+}
+
+.openHeaderMobileNav {
+  display: none;
+}
+
+@media (max-width: 880px) {
+  .headerNav {
+    justify-content: center;
+  }
+
+  .headerNav a {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 550px) {
+  .headerNav {
+    display: none;
+  }
+
+  .headerMobileNavIcon {
+    display: flex;
+    align-items: center;
+  }
+
+  .openHeaderMobileNav {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 100%;
+    background-color: $main-color;
+    justify-content: space-around;
+    color: white;
+    align-items: center;
+  }
+
+  .openHeaderMobileNav div {
+    width: 150px;
+    margin-right: 100px;
+  }
+}
