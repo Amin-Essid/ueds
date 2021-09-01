@@ -58,7 +58,16 @@ const Nav = () => {
             Des Sourires
           </div>
         </Link>
-        <div className="headerNav">{nav}</div>
+        <div className="headerNav">
+          {nav}
+          <a
+            href="https://www.cha9a9a.tn/fund/detail/magic-rentree-11-eme-edition-260710?fbclid=IwGV9Jm2u7rmsCe65wKzPTw5jtS38n2tVEGiYwEd9oOg29Z4Y4LdXu-aojrKM"
+            target="_blank"
+            className="headerButton"
+          >
+            FAITES UN DON
+          </a>
+        </div>
         <div
           className="headerMobileNavIcon"
           onClick={() => {
@@ -92,6 +101,13 @@ const Nav = () => {
         className={mobileMode ? "openHeaderMobileNav" : "closedHeaderMobileNav"}
       >
         {mobileNav}
+        <a
+          href="https://www.cha9a9a.tn/fund/detail/magic-rentree-11-eme-edition-260710?fbclid=IwGV9Jm2u7rmsCe65wKzPTw5jtS38n2tVEGiYwEd9oOg29Z4Y4LdXu-aojrKM"
+          target="_blank"
+          className="headerButton"
+        >
+          FAITES UN DON
+        </a>
       </div>
     </div>
   );

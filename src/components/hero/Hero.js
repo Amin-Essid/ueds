@@ -13,11 +13,12 @@ const Hero = () => {
         créer jusqu'à ce jour 10 bibliothèques scolaires dans les régions les
         plus isolées du pays.
       </div>
-      <div className="hero_title_three">
-        <div>RIB: 00000000000000000000</div>
-        <div>SWIFT: 0000</div>
-        {/* <div></div> */}
-      </div>
+      <a
+        href="https://www.cha9a9a.tn/fund/detail/magic-rentree-11-eme-edition-260710?fbclid=IwGV9Jm2u7rmsCe65wKzPTw5jtS38n2tVEGiYwEd9oOg29Z4Y4LdXu-aojrKM"
+        target="_blank"
+      >
+        <div className="hero_title_three">FAITES UN DON</div>
+      </a>
     </div>
   );
 };

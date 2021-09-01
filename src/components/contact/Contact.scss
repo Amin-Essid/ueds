@@ -1,0 +1,23 @@
+.conatct_container {
+  min-height: 50px;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  div {
+    text-align: left;
+  }
+}
+
+@media (max-width: 550px) {
+  .conatct_container {
+    padding: 10px 3px;
+    justify-content: start;
+  }
+
+  .contact_title_one {
+    margin-bottom: 10px;
+  }
+}
