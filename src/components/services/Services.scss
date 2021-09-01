@@ -1,0 +1,17 @@
+$main-color: #1cabe2;
+
+.servoces_container {
+  padding: 156px 0;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+@media (max-width: 550px) {
+  .servoces_container {
+    justify-content: center;
+  }
+}
