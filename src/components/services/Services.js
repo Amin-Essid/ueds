@@ -39,7 +39,7 @@ const Services = () => {
   ];
 
   return (
-    <div className="servoces_container">
+    <div id="actions" className="servoces_container">
       <div className="service_container">
         <div className="service_image">
           <StaticImage

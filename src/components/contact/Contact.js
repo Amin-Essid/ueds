@@ -4,7 +4,7 @@ import "./Contact.scss";
 // markup
 const Contact = () => {
   return (
-    <div className="conatct_container">
+    <div id="contact" className="conatct_container">
       <div className="contact_title_one">
         APPELEZ-NOUS
         <span style={{ fontWeight: "600" }}> +(216) 71 919 753</span>

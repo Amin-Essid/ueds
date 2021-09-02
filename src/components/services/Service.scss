@@ -38,3 +38,9 @@ $main-color: #1cabe2;
   background-color: $main-color;
   border-radius: 5px;
 }
+
+@media (max-width: 550px) {
+  .service_container {
+    margin-bottom: 20px;
+  }
+}

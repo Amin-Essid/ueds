@@ -5,21 +5,21 @@ import { StaticImage } from "gatsby-plugin-image";
 import "./Nav.scss";
 
 const links = [
+  // {
+  //   name: "Rénovation des écoles",
+  //   url: "",
+  // },
+  // {
+  //   name: "Magic rentrée",
+  //   url: "/",
+  // },
   {
-    name: "Rénovation des écoles",
-    url: "/",
-  },
-  {
-    name: "Magic rentrée",
-    url: "/",
-  },
-  {
-    name: "Daffini",
-    url: "/",
+    name: "Nos actions",
+    url: "#actions",
   },
   {
     name: "Contact",
-    url: "/",
+    url: "#contact",
   },
 ];
 
@@ -28,19 +28,19 @@ const Nav = () => {
   const [mobileMode, setMobileMode] = useState(false);
 
   const nav = links.map((link, index) => (
-    <Link key={index} href={link.url}>
+    <Link key={index} to={link.url}>
       {link.name}
     </Link>
   ));
   const mobileNav = links.map((link, index) => (
     <div key={index}>
-      <Link href={link.url}>{link.name}</Link>
+      <Link to={link.url}>{link.name}</Link>
     </div>
   ));
   return (
     <div className="headerLargeContainer">
       <div className="headerContainer">
-        <Link href="/" style={{ display: "flex" }}>
+        <Link to="/" style={{ display: "flex" }}>
           <div className="headerLogo">
             <StaticImage
               src="../../images/logo.jpg"
